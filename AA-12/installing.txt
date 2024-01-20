@@ -1,0 +1,26 @@
+okay put this in weapons.lua in the core config and paste this somewere under your shotguns
+
+for core/shared/Weapons.lua	
+	
+	[`weapon_aa12`]           = { name = 'weapon_aa12', label = 'AA-12', weapontype = 'Shotgun', ammotype = 'AMMO_SHOTGUN', damagereason = 'Devastated / Pulverized / Shotgunned' },
+
+	
+	and then scroll down until your in the clip_attachment
+	add the line 
+			
+			weapon_aa12 = `COMPONENT_AA12_CLIP_02`, 
+
+	Hit save and close the file off....
+
+Go into your core files and open items.lua and paste this into your weapons info area
+
+	['weapon_aa12'] 			     = {['name'] = 'weapon_aa12', 	 	  	['label'] = 'AA-12', 			['weight'] = 1000, 		['type'] = 'weapon', 	['ammotype'] = 'AMMO_SHOTGUN',						['image'] = 'weapon_aa12.png', 		['unique'] = true, 		['useable'] = false, 	['description'] = 'A shotgun? no!'},
+
+and finally add the icon iv left to qb-inventory/html/images
+
+and finally move the meta/stream folders to your weapons folder if your using one, if your not then make one like [assets_weapons] and make sure that is ensure in boot.
+
+
+Model taken from https://www.gta5-mods.com/weapons/mw2-r-aa-12-animated
+
+So thanks for the lovely model Evandrotorquato ^_~ nice work
